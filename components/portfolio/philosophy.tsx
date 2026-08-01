@@ -37,7 +37,7 @@ export function Philosophy() {
             My Approach
           </span>
           <blockquote className="mt-4 text-balance text-2xl font-semibold leading-snug md:text-3xl">
-            &ldquo;Great websites are not only functional — they create
+            &ldquo;Great websites are not only functional they create
             experiences.&rdquo;
           </blockquote>
         </Reveal>
