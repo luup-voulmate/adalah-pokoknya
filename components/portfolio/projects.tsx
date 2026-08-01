@@ -13,7 +13,7 @@ const projects = [
       'A premium dark portfolio built to showcase my work with smooth animations and glassmorphism.',
     image: '/project-personal.png',
     stack: ['Next.js', 'Tailwind', 'Motion'],
-    githubLink: 'https://github.com/yourusername/personal-website',
+    githubLink: 'https://github.com/colzhxy',
     liveLink: 'https://aidilaaw.my.id' // ← pake ini
   },
   {
@@ -22,7 +22,7 @@ const projects = [
       'An automated messaging bot handling commands, replies, and workflows through a clean interface.',
     image: '/project-bot.png',
     stack: ['Node.js', 'Express', 'API'],
-    githubLink: 'https://github.com/yourusername/whatsapp-bot',
+    githubLink: 'https://github.com/colzhxy',
     liveLink: 'https://your-bot-demo.com' // ← atau null kalo ga ada
   },
 ]
