@@ -13,6 +13,8 @@ const projects = [
       'A premium dark portfolio built to showcase my work with smooth animations and glassmorphism.',
     image: '/project-personal.png',
     stack: ['Next.js', 'Tailwind', 'Motion'],
+    githubLink: 'https://github.com/yourusername/personal-website',
+    liveLink: 'https://aidilaaw.my.id' // ← pake ini
   },
   {
     name: 'WhatsApp Bot',
@@ -20,6 +22,8 @@ const projects = [
       'An automated messaging bot handling commands, replies, and workflows through a clean interface.',
     image: '/project-bot.png',
     stack: ['Node.js', 'Express', 'API'],
+    githubLink: 'https://github.com/yourusername/whatsapp-bot',
+    liveLink: 'https://your-bot-demo.com' // ← atau null kalo ga ada
   },
 ]
 
@@ -38,7 +42,7 @@ export function Projects() {
             <article className="glass group flex h-full flex-col overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:glow-ring">
               <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
-                  src={project.image || '/placeholder.svg'}
+                  src={project.image}
                   alt={`${project.name} preview`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -65,22 +69,29 @@ export function Projects() {
                 </div>
 
                 <div className="mt-auto flex gap-3 pt-5">
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-xs font-medium transition-colors hover:border-primary/50 hover:text-primary"
-                  >
-                    <GithubIcon className="h-4 w-4" />
-                    GitHub
-                  </a>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 rounded-lg bg-primary px-3 py-2 text-xs font-medium text-primary-foreground transition-transform hover:scale-105"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                    Live Demo
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-xs font-medium transition-colors hover:border-primary/50 hover:text-primary"
+                    >
+                      <GithubIcon className="h-4 w-4" />
+                      GitHub
+                    </a>
+                  )}
+                  
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg bg-primary px-3 py-2 text-xs font-medium text-primary-foreground transition-transform hover:scale-105"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </article>
