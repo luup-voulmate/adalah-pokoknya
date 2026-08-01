@@ -9,7 +9,7 @@ import { GithubIcon, InstagramIcon, TiktokIcon } from './brand-icons'
 const socials = [
   { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/luup-voulmate' },
   { icon: InstagramIcon, label: 'Instagram', href: 'https://instagram.com/mhmd.fbynn' },
-  { icon: TiktokIcon, label: 'TikTok', href: 'https://tiktok.com/colzhxy' },
+  { icon: TiktokIcon, label: 'TikTok', href: 'https://www.tiktok.com/@colzhxy?_r=1&_t=ZS-98WfhyD3pv3' },
 ]
 
 export function Contact() {
